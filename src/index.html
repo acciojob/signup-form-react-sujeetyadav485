@@ -7,6 +7,39 @@
 <title>React Boilerplate</title>
 </head>
 <body>
-<div id="root">
+<div id="root" class="signupFrm">
+    <form action="" class="form">
+  <h1 class="title">Sign Up</h1>
+
+  <div class="inputContainer">
+    <input type="text" class="input" placeholder="Name" data-testid="name">
+    <label for="" class="lable" >Name</label>
+  </div>
+  <div class="inputContainer">
+    <input type="text" class="input" placeholder="EmailAddress" data-testid="EmailAddress">
+    <label for="" class="lable">Email Address</label>
+  </div>
+  <div class="inputContainer">
+    <select name="Gender" id="Gender">
+        <option value="gender" data-testid="Gender"> Gender</option>
+        <option value="Male" data-testid="Male">Male</option>
+        <option value="feMale">Female</option>
+        <option value="other">Other</option>
+    </select>
+    <div class="inputContainer">
+        <input type="number" required class="input" placeholder="Mobile Number" data-testid="Mobile number">
+        <label for="" class="lable">Mobile Number</label>
+      </div>
+      <div class="inputContainer">
+        <input type="password" required class="input" placeholder="Password" data-testid="">
+        <label for="" class="lable">Password</label>
+      </div>
+      <input type="submit" class="submitBtn" value="Sign up">
+      
+
+  </div>
+    </form>
 </div>
+
+</body>
 </html>
