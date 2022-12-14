@@ -7,39 +7,56 @@
 <title>React Boilerplate</title>
 </head>
 <body>
-<div id="root" class="signupFrm">
-    <form action="" class="form">
-  <h1 class="title">Sign Up</h1>
 
-  <div class="inputContainer">
-    <input type="text" class="input" placeholder="Name" data-testid="name">
-    <label for="" class="lable" >Name</label>
-  </div>
-  <div class="inputContainer">
-    <input type="text" class="input" placeholder="EmailAddress" data-testid="EmailAddress">
-    <label for="" class="lable">Email Address</label>
-  </div>
-  <div class="inputContainer">
-    <select name="Gender" id="Gender">
-        <option value="gender" data-testid="Gender"> Gender</option>
-        <option value="Male" data-testid="Male">Male</option>
-        <option value="feMale">Female</option>
-        <option value="other">Other</option>
-    </select>
-    <div class="inputContainer">
-        <input type="number" required class="input" placeholder="Mobile Number" data-testid="Mobile number">
-        <label for="" class="lable">Mobile Number</label>
+<form action="">
+  <h1>SignUp Form</h1>
+  
+  <main>
+    <section>
+    <div class="Continer1">
+      <label for="Name"required>Name</label>
+      <input type="text"required class="name" placeholder="Name" id="Name">
+    </div>
+    </section>
+    <section>
+      <div class="container2">
+        <label for="EmailAddress"required>EmailAddress</label>
+        <input type="email"required class="Email" placeholder="EmailAddress" id="email">
       </div>
-      <div class="inputContainer">
-        <input type="password" required class="input" placeholder="Password" data-testid="">
-        <label for="" class="lable">Password</label>
+    </section>
+    <section >
+      <div class="container3">
+        <label for="Gander">Gender</label>
+        <select name="Select" required id="Select">
+          <option value="Gender"required>Select</option>
+          <option value="Gender"required>Male</option>
+          <option value="Gender"required>Female</option>
+          <option value="Gender"required>Other</option>
+        </select>
       </div>
-      <input type="submit" class="submitBtn" value="Sign up">
-      
+    </section>
+    <section>
+      <div class="Container4">
+        <label for="Phone Number">Phone Number</label> 
+        
+        <input type="contact-no"required id="inputField" data-testid="numberField" max="10" textmask="##########" rows="1" pattern=".{10}" value="" fdprocessedid="aw6oz" placeholder="Phone Number">
+      </div>
+    </section>
+    <section>
+    <div class="container5">
+      <label for="Password">Password</label>
+      <input type="password"required  data-testid="password" class="password" id="Password">
+    </div>
+    </section>
+    <section>
+      <div class="container6" data-testid="submit">
+        <button>Submit button</button>
+      </div>
+    </section>
 
-  </div>
-    </form>
-</div>
+    
+  </main>
+</form>
 
 </body>
 </html>
